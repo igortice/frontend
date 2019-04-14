@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container } from 'reactstrap';
+import Main from '../../pages/Main';
 
 const Layout = () => (
   <>
@@ -8,9 +9,7 @@ const Layout = () => (
     </div>
 
     <Container>
-      <Row>
-        <Col>.col</Col>
-      </Row>
+      <Main />
     </Container>
   </>
 );
