@@ -1,6 +1,7 @@
-import React from 'react';
 import { Container } from 'reactstrap';
-import Main from '../../pages/Main';
+import React from 'react';
+
+import Routes from '../../Routes';
 
 const Layout = () => (
   <>
@@ -9,7 +10,7 @@ const Layout = () => (
     </div>
 
     <Container>
-      <Main />
+      <Routes />
     </Container>
   </>
 );

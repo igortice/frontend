@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import api from '../../services/api';
 
 export default class extends Component {
@@ -14,6 +15,8 @@ export default class extends Component {
       });
     }
     this.setState({ loading: false });
+
+    this.props.history.push(`/box/${response.data._id}`);
   };
 
   _handleInputChange = (e) => {
